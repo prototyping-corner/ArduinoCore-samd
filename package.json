@@ -1,0 +1,6 @@
+{
+    "name": "framework-arduino-samd-prototypingcorner",
+    "description": "Arduino Wiring-based Framework (Prototyping Corner SAMD Core)",
+    "url": "https://github.com/prototyping-corner/ArduinoCore-samd",
+    "version": "1.6.2"
+}
