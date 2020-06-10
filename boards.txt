@@ -13,3 +13,35 @@
 # You should have received a copy of the GNU Lesser General Public
 # License along with this library; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+# Prototyping Corner UWB Feather (SAMD21)
+# ------------------------------
+prototypingcorner_uwb_feather.name=Prototyping Corner UWB Feather
+prototypingcorner_uwb_feather.vid.0=0x1209
+prototypingcorner_uwb_feather.pid.0=0x8192
+prototypingcorner_uwb_feather.upload.tool=bossac
+prototypingcorner_uwb_feather.upload.protocol=sam-ba
+prototypingcorner_uwb_feather.upload.maximum_size=262144
+prototypingcorner_uwb_feather.upload.offset=0x2000
+prototypingcorner_uwb_feather.upload.use_1200bps_touch=true
+prototypingcorner_uwb_feather.upload.wait_for_upload_port=true
+prototypingcorner_uwb_feather.upload.native_usb=true
+prototypingcorner_uwb_feather.build.mcu=cortex-m0plus
+prototypingcorner_uwb_feather.build.f_cpu=48000000L
+prototypingcorner_uwb_feather.build.usb_product="UWB Feather"
+prototypingcorner_uwb_feather.build.usb_manufacturer="Prototyping Corner"
+prototypingcorner_uwb_feather.build.board=SAMD_ZERO
+prototypingcorner_uwb_feather.build.core=arduino
+prototypingcorner_uwb_feather.build.extra_flags=-DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS -D__SAMD21G18A__ {build.usb_flags}
+prototypingcorner_uwb_feather.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+prototypingcorner_uwb_feather.build.openocdscript=openocd_scripts/uwb_feather.cfg
+prototypingcorner_uwb_feather.build.variant=uwb_feather
+prototypingcorner_uwb_feather.build.variant_system_lib=
+prototypingcorner_uwb_feather.build.vid=0x1209
+prototypingcorner_uwb_feather.build.pid=0x8192
+prototypingcorner_uwb_feather.bootloader.tool=openocd
+prototypingcorner_uwb_feather.bootloader.file=uwb_feather/bootloader-uwb_feather-v3.4.0-prototypingcorner-1-ge11f058.bin
+prototypingcorner_uwb_feather.menu.usbstack.arduino=Arduino
+prototypingcorner_uwb_feather.menu.debug.off=Off
+prototypingcorner_uwb_feather.menu.debug.on=On
+prototypingcorner_uwb_feather.menu.debug.on.build.flags.debug=-g
